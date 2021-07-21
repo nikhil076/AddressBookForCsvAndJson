@@ -10,28 +10,24 @@ public class Contacts {
 	public int zip;
 	public int phoneNumber;
 	public String email;
-	
-	
-	public Contacts()
-	{
+
+	public Contacts() {
 		super();
 	}
 
-	public void readEntry()
-	{
+	public void readEntry() {
 		System.out.println("First Name:" + first);
 		System.out.println("Last Name:" + last);
 		System.out.println("Address:" + address);
-		System.out.println("city :"+city);
-		System.out.println("State :"+state);
-		System.out.println("Zip :"+zip);
-		System.out.println("Phone Number :"+phoneNumber);
+		System.out.println("city :" + city);
+		System.out.println("State :" + state);
+		System.out.println("Zip :" + zip);
+		System.out.println("Phone Number :" + phoneNumber);
 		System.out.println("Email:" + email);
 	}
 
-
-	public Contacts(String first, String last, String address, String city, String state, int zip, int phoneNumber,String email)
-	{
+	public Contacts(String first, String last, String address, String city, String state, int zip, int phoneNumber,
+			String email) {
 		super();
 		this.first = first;
 		this.last = last;
@@ -43,91 +39,72 @@ public class Contacts {
 		this.email = email;
 	}
 
-	public String getFirst()
-	{
+	public String getFirst() {
 		return first;
 	}
 
-	public void setFirst(String first)
-	{
+	public void setFirst(String first) {
 		this.first = first;
 	}
 
-	public String getLast() 
-	{
+	public String getLast() {
 		return last;
 	}
 
-	public void setLast(String last)
-	{
+	public void setLast(String last) {
 		this.last = last;
 	}
 
-	public String getAddress() 
-	{
+	public String getAddress() {
 		return address;
 	}
 
-	public void setAddress(String address) 
-	{
+	public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getEmail()
-	{
+	public String getEmail() {
 		return email;
 	}
 
-	public void setEmail(String email) 
-	{
+	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public String getCity() 
-	{
+
+	public String getCity() {
 		return city;
 	}
 
-	public void setCity(String city)
-	{
+	public void setCity(String city) {
 		this.city = city;
 	}
 
-	public String getState()
-	{
+	public String getState() {
 		return state;
 	}
 
-	public void setState(String state)
-	{
+	public void setState(String state) {
 		this.state = state;
 	}
-	
-	public int getZip()
-	{
+
+	public int getZip() {
 		return zip;
 	}
 
-	public void setZip(int zip)
-	{
+	public void setZip(int zip) {
 		this.zip = zip;
 	}
-	
-	
-	public int getPhoneNumber() 
-	{
+
+	public int getPhoneNumber() {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(int phoneNumber) 
-	{
+	public void setPhoneNumber(int phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
-
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return "Contacts [first=" + first + ", last=" + last + ", address=" + address + ", city=" + city + ", state="
 				+ state + ", zip=" + zip + ", phoneNumber=" + phoneNumber + ", email=" + email + "]";
 	}

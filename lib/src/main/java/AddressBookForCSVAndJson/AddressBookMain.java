@@ -13,5 +13,8 @@ public class AddressBookMain {
 		addressBookCSV.writeContacatDetailsToFile();
 		addressBookCSV.readFromCSVFile();
 		
+		AddressBookJSON addressBookJSON = new AddressBookJSON();
+		addressBookJSON.writeContactDetailsInAFile("./users.json");
+		addressBookJSON.readaddressBookFromAJSONFile("./users.json");
 	}
 }
